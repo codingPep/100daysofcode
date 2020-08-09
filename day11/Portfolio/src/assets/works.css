@@ -1,0 +1,146 @@
+.works
+{
+    padding-top: 2%;
+    background-color: wheat;
+    margin: 10% auto;
+    border: 2px solid #e0dada;
+    border-radius: 14px;
+    /* min-height: 50vh; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.works h1{
+    font-size: 29px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-style: bold;
+}
+
+.works-grid{
+    padding:3%;
+    display:grid;
+    grid-template-columns:30% 30% 30%;
+    grid-row-gap: 4%;
+    grid-column-gap: 4%;
+    min-width: 100%;
+    overflow: hidden;
+    color:white;
+}
+
+.w-grid{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    overflow: hidden;
+    border-radius: 14px;
+}
+.project-description h3{
+    font-size: 1.4rem;
+    padding-top: 2%;
+    letter-spacing: 2px;
+}
+.w-grid .secondary {
+    display: none;
+    text-align: left;
+    min-height:17vh;
+}
+.secondary h4{
+    font-size: 1rem;
+    line-height: 25px;
+}
+.secondary a{
+    font-size:medium;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.w-grid .initial{
+    padding-top: 30%;
+    transition: all 1s ease;
+}
+.w-grid:hover .initial{
+    color:white;
+     padding-top: 25px;
+}
+.w-grid:hover .secondary {
+    color:white;
+    display: block;
+    /* font-size: 17px; */
+    padding-top: 5%;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+.w-grid:hover{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#splitwise{
+    background:    linear-gradient( rgb(86 86 86 / 22%), rgba(0, 0, 0, 0.5) ),
+    url('https://cdn.dribbble.com/users/2486418/screenshots/7083151/drrribllleee-01_1x.png');
+}
+#splitwise:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.dribbble.com/users/2486418/screenshots/7083151/drrribllleee-01_1x.png');
+
+}
+
+#ola{
+    background:    linear-gradient( rgb(86 86 86 / 22%), rgba(0, 0, 0, 0.5) ),
+    url('https://bsmedia.business-standard.com/_media/bs/img/article/2016-12/19/full/1482144889-9375.jpg');
+}
+#ola:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://bsmedia.business-standard.com/_media/bs/img/article/2016-12/19/full/1482144889-9375.jpg');
+
+}
+
+#quora{
+    background:    linear-gradient( rgb(86 86 86 / 22%), rgba(0, 0, 0, 0.5) ),
+    url('https://blog.swiftype.com/app/uploads/2017/08/blog-quora.png');
+}
+#quora:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://blog.swiftype.com/app/uploads/2017/08/blog-quora.png');
+
+}
+
+#whatsapp{
+    background:    linear-gradient( rgb(86 86 86 / 22%), rgba(0, 0, 0, 0.5) ),
+    url('https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2020/06/20/867768-whatsapp-corona-calls.jpg');
+}
+#whatsapp:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2020/06/20/867768-whatsapp-corona-calls.jpg');
+
+}
+
+#game{
+    background:    linear-gradient( rgb(86 86 86 / 22%), rgba(0, 0, 0, 0.5) ),
+    url('https://image.freepik.com/free-vector/football-soccer-tournament-with-ball-emblem-logo-championship-with-stadium_22052-2505.jpg');
+}
+#game:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://image.freepik.com/free-vector/football-soccer-tournament-with-ball-emblem-logo-championship-with-stadium_22052-2505.jpg');
+
+}
+
+#acres{
+    background:    linear-gradient( rgb(86 86 86 / 22%), rgba(0, 0, 0, 0.5) ),
+    url('https://newsroompost.com/wp-content/uploads/2020/03/99-acres-report.jpg');
+    background-position: left;
+}
+#acres:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://newsroompost.com/wp-content/uploads/2020/03/99-acres-report.jpg');
+
+}
+
+@media only screen and (max-width:1000px){
+    .works-grid{
+      display: block;
+    }
+    .w-grid{
+      margin-bottom:5%
+    }
+ }

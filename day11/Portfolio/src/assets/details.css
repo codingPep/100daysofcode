@@ -1,0 +1,69 @@
+.main-modal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2%;
+}
+#de{
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+    min-height: 174px;
+}
+#de span{
+    font-weight:800;
+
+}
+.func{
+    padding-left:2%;
+    padding-bottom: 2%;
+}
+#ded{
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color:green;
+}
+.modal-image{
+    background-color: red;
+    min-height:20vh;
+}
+#modal-img img{
+    width:468px;
+}
+.modal-details{
+    margin:auto;
+    display:grid;
+    grid-template-rows: 30% 70%;
+}
+
+   
+
+.tech-details{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 15px;
+
+}
+#identity h1{
+    font-size: 1.05rem;
+    font-weight:900;
+    letter-spacing: 1px;
+   
+}
+#identity h3{
+    font-size: 1.05rem;
+   
+}
+
+@media only screen and (max-width:1300px){
+    .main-modal{
+        display: block;
+        overflow: hidden;
+    }
+    .modal-details{
+        min-height: 255px;
+        padding: 4%;
+        /* margin-top: 5%; */
+    }
+}

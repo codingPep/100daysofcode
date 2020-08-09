@@ -1,0 +1,44 @@
+.banner-set{
+    min-height: 15vh;
+    min-width:100%;
+    background-color:black;
+    margin-bottom: 20px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary{
+    text-align:left;
+    padding:2%;
+    width:70%;
+    line-height: 40px;
+}
+.summary h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.contact-me-btn{
+    width:20%;
+}
+.contact-me-btn button{
+    border:1px solid white;
+    background-color: black;
+    color:white;
+    padding:2%;
+    /* width:50%; */
+    /* height:40px; */
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width:1300px){
+    .summary h1{
+        font-size:15px;
+    }
+    .contact-me-btn button{
+        font-size: 15px;
+    }
+}
