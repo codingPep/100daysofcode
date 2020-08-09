@@ -1,0 +1,1 @@
+Page displaying the things with the slide show
