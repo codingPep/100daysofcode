@@ -1,0 +1,196 @@
+.contact-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+    overflow:hidden;
+}
+
+.top-bar{
+   background-color: white; 
+   min-height: 100vh;
+   min-width: 192vh;
+   /* transform: rotate(-55deg); */
+}
+.bottom-bar{
+    background-image: url('https://images.unsplash.com/photo-1560529870-1efc5a43990f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 36.5vw;
+    color: white;
+    padding-top: 32%;
+    padding-left: 58%;
+}
+.bottom-bar h1,a{
+    padding-top:40%;
+    font-size:20px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+.bottom-bar a{
+    text-decoration: underline;
+    color:yellow;
+}
+.abt-social-media2{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width:100%;
+    height:250px;
+    margin-top:3%;
+    margin-left: 72%;
+    /* margin-right:auto; */
+    
+}
+.abt-social-media2 div{
+    background-color: white;
+    /* width:100%; */
+    /* height:90px; */
+    /* padding:2px; */
+    margin:15px 25px;
+    
+}
+
+.abt-social-media2 .facebook{
+    background-image: url('https://image.flaticon.com/icons/png/512/60/60818.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 42px;
+    min-height: 0vh;
+    border-radius: 29px;
+    
+}
+
+.abt-social-media2 .twitter{
+    background-image: url('https://image.flaticon.com/icons/svg/60/60580.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 42px;
+    min-height: 0vh;
+    border-radius: 29px;
+}
+
+.abt-social-media2 .linkedin1{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/LinkedIn_logo_In-Black.svg/1200px-LinkedIn_logo_In-Black.svg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 42px;
+    min-height: 0vh;
+    border-radius: 29px;
+}
+
+
+.wrapper{
+  top:50%;
+  left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+}
+
+.mail{
+    width:300px;
+    height:200px;
+    background: #ff8789;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    /* cursor: pointer; */
+}
+
+.mail:before{
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    border-left:150px solid transparent;
+    border-right:150px solid #ff393c;
+    border-top:100px solid transparent;
+    border-bottom:100px solid #ff393c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index:5;
+}
+
+.mail:after{
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    border-left:150px solid #ff5355;
+    border-right:150px solid transparent;
+    border-top:100px solid transparent;
+    border-bottom:100px solid #ff5355;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 4;
+}
+
+.cover:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top:100px solid #ff8789;
+    border-bottom:100px solid transparent;
+    z-index:6;
+    transform-origin: top;
+    transform:rotate(360deg);
+    transition: all 3.5s 1s ease; 
+}
+
+.letter{
+    position: absolute;
+    z-index:3;
+    top:0;
+    left:10px;
+    background: #dedede;
+    width:280px;
+    height:180px;
+    border-radius: 20px;
+    transition: all 1s 1s ease;
+}
+
+.letter h1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 80px;
+    color: #798992;
+    font-weight:900;
+
+}
+
+
+.mail:hover .cover:before{
+    transform:rotateX(180deg);
+    transition: all 1s ease;
+    z-index:0;
+}
+
+.mail:hover .letter{
+    top:-80px;
+    transition: all 1s 1s ease;
+}
+
+.body-mail{
+margin-top:10%;
+
+}
+.body-mail button{
+    color:white;
+    width:20%;
+    margin-top:6%;
+    border-radius: 5px;
+    background-color: green;
+}
