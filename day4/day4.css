@@ -1,0 +1,162 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+.Navigation{
+    min-height:100px;
+    /* background-color:yellow; */
+    border:10px solid yellow;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+}
+
+.abt-main{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top:1%; */
+
+}
+.abt-header{
+    text-align: left;
+    width:80%;
+    /* background-color: rebeccapurple; */
+    padding:3% 5% 3% 0%;
+}
+.abt-header h1{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-style: bold;
+
+}
+.abt-header h3{
+    letter-spacing: 3px;
+    color:gray;
+    padding-top:10px;
+}
+.abt-wrapper{
+    /* border: 2px solid gray; */
+    width:80%;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-gap:3%;
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.abt-image{
+    /* background-color: aqua; */
+    background: url('https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=651&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.abt-content{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.abt-content-header{
+    /* background-color:gray; */
+    /* padding:1%; */
+    text-align: left;
+    line-height: 30px;
+    padding-bottom:20px;
+}
+
+.abt-content-header h1{
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-style: bold;
+}
+
+.abt-content-header h2{
+    color:#343030fc;
+    line-height: 40px;
+    font-size:18px;
+    letter-spacing: 2px;
+}
+
+.abt-content-header h2 span{
+    color:#d1ca2a;
+}
+
+
+.abt-content-header h3{
+    line-height:24px;
+    color:gray;
+    letter-spacing: 1px;
+}
+.abt-content-body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+.abt-content-body div{
+    /* background-color: green; */
+    width:80%;
+    border: 2px solid gray;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    text-align: left;
+    padding-top:8%;
+    padding-bottom:2%;
+}
+
+.abt-content-body p{
+    font-style: bold;
+    font-weight: 700;
+}
+
+.abt-content-body span{
+    font-weight: 500;
+}
+.abt-social-media{
+    display: flex;
+    /* justify-content: space-around; */
+    width:30%;
+    margin-top:4%;
+    
+}
+.abt-social-media div{
+    background-color: white;
+    padding:2px;
+    margin:5px 15px;
+}
+
+.abt-social-media .facebook{
+    background-image: url('https://image.flaticon.com/icons/png/512/60/60818.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:15%;
+    min-height:5vh;
+    
+}
+
+.abt-social-media .twitter{
+    background-image: url('https://image.flaticon.com/icons/svg/60/60580.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:15%;
+    min-height:5vh;
+}
+
+.abt-social-media .linkedin1{
+    background-image: url('https://www.iconsdb.com/icons/preview/black/linkedin-6-xxl.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:15%;
+    min-height: 5vh;
+}
