@@ -1,0 +1,119 @@
+.main-awards{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin:10%;
+    width:67%;
+}
+.certificates{
+  background-color: #ea989875;
+    /* background-color: rgba(200, 199, 199, 0.363); */
+    color:black;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.awards-page{
+    min-height:10vh;
+    /* min-width:70%; */
+    /* margin:10% auto; */
+    /* background-color: red; */
+    text-align: left;
+}
+.awards-heading h1{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-style: bold;
+    margin-bottom: 15%;
+}
+img{
+    width: 625px;
+    height: auto;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+  }
+.slideshow{
+    width: 625px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: solid 1px;
+    box-shadow:  0 19px 38px rgb(17 17 17), 0 15px 12px rgb(0 0 0);
+    
+}
+.awards-slide{
+    width: 2495px;
+    font-size: 0;
+    transition: 1s ease;
+    height: 360px;
+    display:flex;
+    
+}
+
+.done{
+    animation: slide 14s ease infinite;
+
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+      }
+      
+      12.5% {
+        transform: translateX(-25%);
+      }
+      
+      25% {
+        transform: translateX(-25%);
+      }
+      
+      37.5% {
+        transform: translateX(-25%);
+      }
+      
+      50% {
+        transform: translateX(-50%);
+      }
+      
+      62.5% {
+        transform: translateX(-50%);
+      }
+     
+      
+      100% {
+        transform: translateX(0);
+      }
+  }
+  .certif{
+    margin-top: 5%;
+    margin-left:20%;
+    min-height:40vh;
+    width:75%;
+    text-align: left;
+    display:grid;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    /* background-color: red; */
+  }
+  .certif h1{
+    font-size:20px;
+    line-height:52px;
+    font-family: 'Courgette', cursive;
+  }
+  .certif img{
+    width:10%;
+    padding-right:2%;
+  }
+
+  @media only screen and (max-width:1300px){
+    .main-awards{
+      display:grid;
+      grid-template-columns: none;
+      overflow: hidden;
+      width:84%;
+    }
+    .certif{
+      margin-top: 8%;
+    margin-left: 3%;
+    }
+  }
