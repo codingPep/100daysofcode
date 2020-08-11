@@ -1,0 +1,19 @@
+%btn{
+    border-radius: 3px;
+    width:80px;
+    height:80px;
+    padding:10px;
+
+    &:hover{
+      transform:scale(1px);
+    }
+}
+.btn-primary{
+    @extend %btn;
+    @include set-background(lighten($primary-color, 10%));
+}
+
+.btn-secondary{
+    @extend %btn;
+    @include set-background($secondary-color);
+}

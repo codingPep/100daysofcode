@@ -1,0 +1,5 @@
+1. Sass is actually a css-preprocessor and it is for writing effective css.
+2. Sass enable us to use various features like variables,functions,mixins,conditions etc which are actually not there in css.
+3. The main file is actually split into various files and those file names are prefixed with underscore which let compilier to ignore those and project a single file as style.css
+4. To convert scss into css transpilation is done, and we can do it via two ways, one is using npm sass and another is using the live sass compiler of vscode extension.
+5. to automate the changes done in scss to css we need to add few lines in settings of vscode.
