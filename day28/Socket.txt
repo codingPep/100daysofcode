@@ -1,0 +1,18 @@
+SOCKET
+
+Socket.IO is a library that enables real-time, bidirectional and event-based communication
+ between the browser and the server.
+
+
+FEATURES:
+
+1. Reliability
+Connections are established even in the presence of:
+
+   # proxies and load balancers.
+   # personal firewall and antivirus software.
+
+2. Auto Reconnection support
+3. Disconnection detection
+4. Binary support
+5. Multiplexing support

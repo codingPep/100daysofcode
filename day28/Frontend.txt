@@ -1,0 +1,32 @@
+INSTALLATION:
+
+install socket.io-client
+
+
+
+STEPS:
+1. import io from "socket.io-client";
+
+2. let socket;
+3. const ENDPOINT = "localhost:5000"
+4. useEffect(()=>{
+      socket = io(ENDPOINT);
+      const name= name;
+      socket.emit("user-connected",name);
+      socket.on("user-connected",(username)=>{
+         console.log(username);
+      });
+
+      socket.emit("send",{data});
+      socket.on("message",(msg)=>{
+          console.log(msg)
+      })
+
+    
+    return () =>{
+        socket.emit("disconnect");
+        socket.off();
+    }
+
+
+},[ENDPOINT]);

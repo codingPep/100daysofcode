@@ -1,0 +1,51 @@
+INSTALLATION:
+
+npm i socket.io
+
+STEPS:
+1. var socket = require("socket.io");
+2. const express = require("express");
+   var socket = require("socket.io");
+
+const app = express();
+server = app.listen(5000, function () {
+  console.log("server is running on port 5000");
+});
+
+io = socket(server);
+var users = [];
+
+io.on("connection", (socket) => {
+  // console.log(socket.id);
+
+  socket.on("user_connected", function (data) {
+    users[data] = socket.id;
+    io.emit("user_connected", data);
+  });
+
+  socket.on("sendMessage", (message, sender, receiver, sid, rid) => {
+    var senderid = users[sender];
+    var receiverid = users[receiver];
+   
+    io.to(senderid).emit("message", {
+      text: message,
+      user: sender,
+      s: sid,
+      r: rid,
+    });
+    io.to(receiverid).emit("message", {
+      text: message,
+      user: sender,
+      s: sid,
+      r: rid,
+    });
+  });
+
+  socket.on("disconnect", () => {
+    // const user = removeUser(socket.id);
+    console.log("user disconnected.......");
+    const index = users.findIndex((user) => user.id === id);
+
+    if (index !== -1) return users.splice(index, 1)[0];
+  });
+});
