@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "abc123",
+    "database": "ECommerce",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorAliases": false
+  },
+  "test": {
+    "username": "postgres",
+    "password": "abc123",
+    "database": "ECommerce",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "abc123",
+    "database": "ECommerce",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
