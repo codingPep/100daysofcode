@@ -1,0 +1,12 @@
+E-Commerce Application
+IT is an application for selling the products and to order your products
+It is a PERN stack Application
+TECHNOLOGIES USED:
+1. FRONTEND: React Js
+2. BACKEND:  Node Js
+3. DATABASE: Postgres
+4. DEPLOYMENT:Docker,Heroku
+
+
+link:    https://github.com/jjayalakshmi16/E-Commerce
+
