@@ -1,0 +1,10 @@
+Angular Js
+
+Learned Angular JS and Typescript for Angular
+
+# Types in Typescript
+# Conditions and Loop
+# Functions and Paramenters
+# Interface, Class
+# Decorators
+
