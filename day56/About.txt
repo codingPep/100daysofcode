@@ -1,0 +1,50 @@
+CRUD Operations using ROR
+
+Create a new app
+   rails new pets-app
+
+
+Launch a server
+   rails s
+
+
+Create models
+   rails g model owner first_name last_name age:integer email
+   rails g model pet name species owner_id:integer owner:belongs_to
+
+
+Set up associations
+   class Owner < ApplicationRecord
+     has_many :pets
+   end 
+
+Add validations
+    class Owner < ApplicationRecord
+      has_many :pets
+      validates :name,presence : true
+    end
+    
+Run Migrations
+    rails db:migrate
+    
+Seed your database
+    Owner.create!(first_name:"Dan", last_name:"Weirdo", age: 18,        email:"realemail@cool.com")
+    Pet.create!(name:"Snowball", species:"dog", owner_id:1)
+    
+Test associations
+   Owner.first.pets
+   Pet.first.owner
+
+Test validations
+   owner = Owner.new(first_name: "")
+   owner.valid?
+   owner.errors.messages
+   
+Create Controllers and views
+    rails g controller owners index show new create edit update destroy
+    rails g controller pets index show new create edit update destroy
+  
+  Create Routes
+     resources:pets
+     resources:owners
+     
