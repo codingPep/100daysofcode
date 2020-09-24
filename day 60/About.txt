@@ -1,0 +1,4 @@
+Learning Ruby on rails
+
+Depth learning of actions routes and views in rails and started doing task
+
