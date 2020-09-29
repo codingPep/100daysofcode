@@ -1,0 +1,6 @@
+Ruby on Rails
+
+Application that enable us to add picture title link and the description  and enable the viewers to comment like and dislike the post
+
+
+https://github.com/jjayalakshmi16/Inspiro-Blog
